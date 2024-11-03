@@ -1,0 +1,68 @@
+#!/bin/csh -f
+#
+#
+#
+# Script to create : Stand Alone Verilog-XL
+# Created by VCONFIG version 3.0 on Tue Jun  6 16:20:12 PDT 1995
+#
+
+# This section determines which ANSI C libraries
+# to use when linking your new Verilog-XL executable.
+
+if (-e /usr/lang/SC1.0/ansi_lib/libansi.a) then
+  set ANSI_LIB = /usr/lang/SC1.0/ansi_lib/libansi.a
+else
+  set ANSI_LIB = /net/edatool1/export/cadtools/veritools/9401_release/tools/lib/libansi.a
+endif
+
+echo ""
+echo ""
+echo "***** NOTICE *****"
+echo ""
+echo " This release of Verilog-XL has been compiled with ANSI C "
+echo " This linking script is going to use the cc or CC compiler and the "
+echo " ANSI C libraries to link your new Verilog-XL executable. "
+echo " If ANSI C libraries are installed on this system in the directory "
+echo " /usr/lang/SC1.0/ansi_lib    then they will be used.  If "
+echo " they are not, then the Cadence supplied ANSI C library will be used. "
+echo ""
+echo "******************"
+echo ""
+#
+setenv ccC cc
+#
+set verbose
+#
+#
+# The following line(s) will pre-compile your
+# PLI C source files before the linking step.
+#
+cc -c ./veriuser.c \
+   -I/net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/include
+cc -c ./hello_verilog.c \
+   -I/net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/include
+# The following is the actual compile/link
+# statement:                              
+#                                         
+CC -o hverilog \
+   /net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/lib/vlog.o \
+   /net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/lib/omnitasks.o \
+   /net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/lib/env_vxl.o \
+   /net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/lib/cw_vlog.o \
+   /net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/lib/shm_vlog.o \
+   veriuser.o \
+   hello_v.o \
+   /net/edatool1/export/cadtools/veritools/9401_release/tools/dfII/lib/virtuos.a \
+   -I/net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/include \
+   -L/net/edatool1/export/cadtools/veritools/9401_release/tools/verilog/lib \
+   -lsdfa \
+   -lsdf \
+   -L/net/edatool1/export/cadtools/veritools/9401_release/tools/lib \
+   -lcman \
+   -L/usr/lib/X11 \
+   -lXt -lX11 \
+   -lvoids \
+-lm  \
+   $ANSI_LIB 
+#
+unset verbose

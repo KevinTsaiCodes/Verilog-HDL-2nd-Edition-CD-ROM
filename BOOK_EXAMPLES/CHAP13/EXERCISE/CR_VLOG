@@ -1,0 +1,30 @@
+#!/bin/csh -f
+#
+#
+#
+# Script to create : Stand Alone Verilog-XL
+# Created by VCONFIG version 3.0 on Tue Aug 15 10:58:55 PDT 1995
+#
+set verbose
+#
+# The following is the actual compile/link
+# statement:                              
+#                                         
+/usr/dist/local/pkgs/sunpro,v3.0.2/5.x-sparc/bin/cc -c ex1/get_port.c \
+-I/net/cadenv1/export/cadist/pkgs/veritools/veritools/5.x/tools/verilog/include 
+
+/usr/dist/local/pkgs/sunpro,v3.0.2/5.x-sparc/bin/cc -o hverilog \
+   /net/cadenv1/export/cadist/pkgs/veritools/veritools/5.x/tools/verilog/lib/vlog.o \
+   /net/cadenv1/export/cadist/pkgs/veritools/veritools/5.x/tools/verilog/lib/omnitasks.o \
+   /net/cadenv1/export/cadist/pkgs/veritools/veritools/5.x/tools/verilog/lib/shm_vlog.o \
+   ./veriuser.c \
+   get_port.o \
+   /net/cadenv1/export/cadist/pkgs/veritools/veritools/5.x/tools/dfII/lib/virtuos.a \
+   -I/net/cadenv1/export/cadist/pkgs/veritools/veritools/5.x/tools/verilog/include \
+   -L/net/cadenv1/export/cadist/pkgs/veritools/veritools/5.x/tools/verilog/lib \
+   -lsdfa \
+   -lsdf \
+   -lvoids \
+-lsocket -lnsl -lm 
+#
+unset verbose
