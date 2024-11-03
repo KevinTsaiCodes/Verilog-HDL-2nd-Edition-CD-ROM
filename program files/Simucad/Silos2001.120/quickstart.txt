@@ -1,0 +1,34 @@
+
+               On Line Tutorial
+               ================
+
+    Select Help/User's Manual and select the Tutorial
+    chapter for information on the features of Silos.
+
+
+          Quick Start Instructions for Silos
+          ==================================
+
+
+1)  Open an existing project by selecting the main menu
+    Project/Open item and choosing an existing project
+    using the "Open Project" dialog box.
+
+                    Or
+
+2)  Create a new project by selecting Project/New to open 
+    the "Create New Project" dialog box.  Enter the project
+    name and click on the "Save" button.
+
+    The "Project Files" dialog box is automatically opened.
+    Add the source files and/or library files to the 
+    "Files/Directories in Group" box.  Click on the OK button 
+    to close the "Project Files" dialog box.  
+
+    If you are already using another simulator,
+    you may want to select the "Project/Project Settings" menu
+    to open the "Project Settings" dialog box to 
+    specify the command line options for your design.
+
+    Click on the "GO" button on the Main toolbar to simulate
+    the design.  

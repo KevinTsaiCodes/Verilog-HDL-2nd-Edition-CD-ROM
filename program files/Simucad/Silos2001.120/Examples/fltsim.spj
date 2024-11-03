@@ -1,0 +1,100 @@
+[Settings]
+Version=98.1
+SimFile=
+TabStop=4
+Mode=Debug
+[DebugMode]
+Delay=Typ
+SaveAll=Yes
+SaveCell=Yes
+SilosExt=No
+LogFile=Yes
+FunctionalSim=No
+RetainSimData=No
+DiskSize=1000M
+CommandLine=-f design1
+
+RecirculateTime=
+[Options]
+NoFloatWarn=No
+XlEvalOrder=No
+AutoFileSave=No
+SimFileSize=Size
+DebugEnable=No
+CCEnable=No
+CcOpEnable=No
+[FaultSim]
+fs_dut=stimulate.dm
+select_all_faults=0
+vreishigh=stimulate\.dm\..*
+vreislow=stimulate\.dm\..*
+vreshigh=stimulate\.dm\..*
+vreslow=stimulate\.dm\..*
+istucklow=10.0
+istuckhigh=10.0
+ostucklow=10.0
+ostuckhigh=10.0
+process_weight=1
+max_memory=10000000
+fmem=20
+tristate_detect=1
+dropposs=0
+enable_checkpoint=1
+seed=1777777
+[Position]
+Width=875
+Height=668
+X=33
+Y=61
+[Explorer]
+P1Width=136
+P2Width=554
+View=List
+Scope=stimulate.dm
+C1Width=112
+C2Width=112
+[Analyzer]
+P1Width=385
+P2Width=524
+C1Width=169
+C2Width=94
+C3Width=60
+SymbolFile=design.sym
+[Files]
+0=faulttst.v
+[Group1]
+Name=drink_machine
+0="stimulate : vendsoft_drink"
+1="stimulate : vendpepsi"
+2="Blank"
+3="stimulate : soft_drink"
+4="stimulate : pepsi"
+5="Blank"
+6="stimulate : vendcoke"
+7="stimulate : coke"
+8="Blank"
+9="stimulate : coin[1:0]" Symbol "coin"
+10="stimulate : resetn"
+11="stimulate : clock"
+[Group0]
+Name=Default
+0="stimulate : vendsoft_drink"
+1="stimulate : vendpepsi"
+2="Blank"
+3="stimulate : soft_drink"
+4="stimulate : pepsi"
+5="Blank"
+6="stimulate : vendcoke"
+7="stimulate : coke"
+8="Blank"
+9="stimulate : coin[1:0]" Symbol "coin"
+10="stimulate : resetn"
+11="stimulate : clock"
+[WindowPos]
+Output=0,1,0,-1,0,-1,0,0,928,537
+Explorer=0,1,0,-1,0,-1,22,22,731,383
+OpenWindows=1
+Analyzer=0,1,0,-1,0,-1,22,29,950,566
+
+[GroupList]
+0=Default
