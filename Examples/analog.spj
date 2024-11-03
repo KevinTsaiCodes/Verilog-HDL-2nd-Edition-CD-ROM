@@ -1,0 +1,54 @@
+[Files]
+0=analog.v
+
+[Settings]
+Mode=Debug
+Version=97.1
+[Position]
+Width=1103
+Height=858
+X=33
+Y=61
+[Explorer]
+P1Width=100
+P2Width=685
+View=Icon
+Scope=top
+
+[Analyzer]
+C1Width=137
+C2Width=60
+C3Width=60
+P1Width=265
+P2Width=644
+
+[Group0]
+Name=analog
+0=top:count[7:0]
+1="top:counter_value" Decimal
+2=top:feedback
+3=top:analog_in
+4=top:down_up
+5=top:clock
+
+[WindowPos]
+Output=0,1,0,-1,-4,-23,0,0,928,537
+OpenWindows=1
+Analyzer=0,1,0,-1,0,-1,22,29,950,566
+
+[Options]
+DebugEnable=Yes
+CCEnable=No
+CcOpEnable=No
+
+[Group1]
+Name=Default
+0="top : count[7:0]" default
+1="top : counter_value" default Real
+2="top : feedback" default Real
+3="top : analog_in" default Real
+4="top : down_up" default
+5="top : clock" default
+
+[GroupList]
+0=Default

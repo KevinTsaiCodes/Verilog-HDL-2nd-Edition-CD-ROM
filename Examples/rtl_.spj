@@ -1,0 +1,95 @@
+[Files]
+0=vendtest.v
+1=vend.v
+
+[Settings]
+Mode=Debug
+SimFile=
+TabStop=4
+Version=97.1
+
+[Explorer]
+P1Width=178
+P2Width=731
+View=List
+C1Width=112
+C2Width=112
+Scope=stimulus.vendY
+ListSort=Type
+[Browser]
+Scope=stimulus
+[Position]
+Width=1138
+Height=959
+X=126
+Y=17
+[Analyzer]
+C1Width=166
+C2Width=52
+C3Width=60
+SymbolFile=rtl.sym
+P1Width=285
+P2Width=624
+[SDA]
+FaceName=Times New Roman
+PtSize=10
+FontWeight=400
+
+
+
+[DebugMode]
+Delay=Typ
+SaveAll=Yes
+SaveCell=Yes
+SilosExt=No
+LogFile=No
+FunctionalSim=No
+RetainSimData=Yes
+DiskSize=1000M
+CommandLine=
+
+[Options]
+AutoFileSave=Yes
+DebugEnable=Yes
+CCEnable=Yes
+CcOpEnable=Yes
+
+[Group1]
+Name=vending
+0="stimulus : info[96:1]" String
+1="Blank"
+2="stimulus.vendY : PRES_STATE[1:0]" Symbol "coin_values"
+3="stimulus.vendY : NEXT_STATE[1:0]" Symbol "cents"
+4="Blank"
+5="stimulus : reset"
+6="stimulus : newspaper"
+7="stimulus : coin[1:0]" Symbol "coin_values"
+8="stimulus : clock"
+
+
+
+[WindowPos]
+Output=0,1,0,-1,0,-1,0,0,928,537
+Explorer=0,1,0,-1,0,-1,22,29,950,566
+CodeCovLine=0,1,0,-1,0,-1,24,66,846,511
+OpenWindows=3
+Analyzer=0,1,0,-1,0,-1,44,58,972,595
+
+[TraceInput]
+P1Width=285
+P2Width=462
+
+[Group0]
+Name=Default
+0="stimulus : info[96:1]" default String
+1="Blank" default
+2="stimulus.vendY : PRES_STATE[1:0]" default Symbol "cents"
+3="stimulus.vendY : NEXT_STATE[1:0]" default Symbol "coin_values"
+4="Blank" default
+5="stimulus : reset" default
+6="stimulus : newspaper" default
+7="stimulus : coin[1:0]" default Symbol "coin_values"
+8="stimulus : clock" default
+
+[GroupList]
+0=Default

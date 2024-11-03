@@ -1,0 +1,15 @@
+[Position]
+X=6
+Y=83
+Width=1006
+Height=644
+[Settings]
+Mode=Debug
+Version=97.1
+[Files]
+0=pli01.v
+[PliFiles]
+0=pli01.dll
+[WindowPos]
+OpenWindows=
+Output=0,1,0,-1,0,-1,22,22,730,392

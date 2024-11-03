@@ -1,0 +1,11 @@
+// This file contains the symbols for coin values for newspaper vending machine
+[coin_values]
+0=none
+1=nickel
+2=dime
+3=dime + nickel
+[cents]
+0=0 cents
+1=5 cents
+2=10 cents
+3=15 cents

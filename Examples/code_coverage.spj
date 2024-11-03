@@ -1,0 +1,54 @@
+[Settings]
+Version=2000.c
+Mode=Debug
+
+[WindowPos]
+CodeCovLine=0,1,0,-1,0,-1,-4,10,527,312
+CodeCovOp=0,1,0,-1,-4,-23,8,104,907,311
+Output=0,1,0,-1,0,-1,0,0,720,319
+Explorer=0,1,0,-1,0,-1,154,154,782,512
+OpenWindows=1
+Analyzer=0,1,0,-1,0,-1,22,22,742,341
+
+[Options]
+DebugEnable=Yes
+CCEnable=Yes
+CcOpEnable=Yes
+
+[Position]
+Width=1020
+Height=697
+X=5
+Y=-1
+
+[Files]
+0="testbench.v"
+1="code_coverage.v"
+
+[Explorer]
+P1Width=100
+P2Width=509
+View=List
+Scope=testbench
+C1Width=112
+C2Width=112
+
+[Group0]
+Name=Default
+0="testbench : D[1:0]" default
+1="testbench : C[1:0]" default
+2="testbench : B[1:0]" default
+3="testbench : A[1:0]" default
+4="testbench : Z[1:0]" default
+
+[Analyzer]
+P1Width=239
+P2Width=462
+C1Width=74
+C2Width=103
+C3Width=60
+
+
+
+[GroupList]
+0=Default

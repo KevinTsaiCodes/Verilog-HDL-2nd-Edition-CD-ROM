@@ -1,0 +1,20 @@
+//symbol table for vegas drink machine
+[drink_choice]
+4=pepsi
+2=coke
+1=screwdriver
+0=no choice
+
+[coin]
+0=none
+1=nickel
+2=dime
+3=quarter
+
+[present_state]
+0=no money
+1=5 cents
+2=10 cents
+3=15 cents
+4=20 cents
+5=25 cents

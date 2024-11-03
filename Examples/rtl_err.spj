@@ -1,0 +1,55 @@
+[Settings]
+Mode=Debug
+Version=97.1
+
+[Explorer]
+P1Width=178
+P2Width=205
+View=List
+C1Width=112
+C2Width=112
+[Browser]
+Scope=stimulus
+[Position]
+Width=883
+Height=515
+X=62
+Y=0
+[Analyzer]
+C1Width=112
+C2Width=20
+C3Width=60
+[SDA]
+FaceName=Times New Roman
+PtSize=8
+FontWeight=700
+
+
+
+[Files]
+0=venderr.v
+1=vend.v
+
+[Group0]
+Name=Default
+0=stimulus : clock
+1=stimulus : coin[1:0]
+2=stimulus : newspaper
+3=stimulus : reset
+
+[Group1]
+Name=vending
+0=stimulus:reset
+1=stimulus:newspaper
+2=stimulus:coin[1:0]
+3=stimulus:clock
+
+[WindowPos]
+Output=0,1,0,-1,0,-1,0,0,766,324
+OpenWindows=
+
+[Options]
+DebugEnable=Yes
+CCEnable=No
+CcOpEnable=No
+

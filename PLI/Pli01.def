@@ -1,0 +1,5 @@
+LIBRARY
+EXPORTS
+ veriusertfs
+ putp_01_calltf
+ 
