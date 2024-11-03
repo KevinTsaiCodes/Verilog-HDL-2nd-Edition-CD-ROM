@@ -1,0 +1,54 @@
+//specify library file.  Must specify correct absolute path for
+//the library file.
+!library  .\abc_100.v
+
+
+module fulladd4 ( sum, c_out, a, b, c_in );
+output [3:0] sum;
+input  [3:0] a;
+input  [3:0] b;
+input  c_in;
+output c_out;
+    wire n160, n161, n162, n163, n164, n165, n140, n166, n141, n167, n142, 
+        n168, n143, n169, n144, n145, n146, n147, n148, n149, n170, n171, n150, 
+        n151, n152, n153, n154, n155, n156, n157, n158, n159, n139;
+    VNAND U50 ( .in0(n144), .in1(n171), .out(n153) );
+    VNOT U51 ( .in(b[2]), .out(n169) );
+    VNOT U52 ( .in(a[3]), .out(n170) );
+    VNAND U40 ( .in0(a[2]), .in1(n169), .out(n152) );
+    VNOT U53 ( .in(a[0]), .out(n167) );
+    VOR U41 ( .in0(n169), .in1(a[2]), .out(n151) );
+    VNOT U54 ( .in(a[1]), .out(n168) );
+    VOR U42 ( .in0(n170), .in1(b[3]), .out(n143) );
+    VNOT U55 ( .in(c_in), .out(n171) );
+    VNAND U30 ( .in0(a[0]), .in1(b[0]), .out(n165) );
+    VNAND U43 ( .in0(b[3]), .in1(n170), .out(n142) );
+    VNAND U31 ( .in0(c_in), .in1(n144), .out(n164) );
+    VOR U44 ( .in0(n155), .in1(n141), .out(n158) );
+    VNAND U32 ( .in0(a[1]), .in1(b[1]), .out(n161) );
+    VOR U45 ( .in0(n159), .in1(n150), .out(n162) );
+    VNAND U20 ( .in0(n145), .in1(n146), .out(n144) );
+    VNAND U33 ( .in0(b[2]), .in1(a[2]), .out(n156) );
+    VNAND U46 ( .in0(n150), .in1(n159), .out(n157) );
+    VNAND U21 ( .in0(n148), .in1(n149), .out(n147) );
+    VNAND U34 ( .in0(n141), .in1(n155), .out(n140) );
+    VOR U47 ( .in0(n163), .in1(n147), .out(n166) );
+    VNAND U22 ( .in0(n151), .in1(n152), .out(n150) );
+    VNAND U35 ( .in0(b[3]), .in1(a[3]), .out(n139) );
+    VNAND U48 ( .in0(n147), .in1(n163), .out(n160) );
+    VNAND U23 ( .in0(n153), .in1(n154), .out(sum[0]) );
+    VOR U36 ( .in0(n167), .in1(b[0]), .out(n146) );
+    VOR U49 ( .in0(n144), .in1(n171), .out(n154) );
+    VNAND U24 ( .in0(n156), .in1(n157), .out(n155) );
+    VNAND U37 ( .in0(b[0]), .in1(n167), .out(n145) );
+    VAND U25 ( .in0(n140), .in1(n158), .out(sum[3]) );
+    VOR U38 ( .in0(n168), .in1(b[1]), .out(n149) );
+    VNAND U26 ( .in0(n160), .in1(n161), .out(n159) );
+    VNAND U39 ( .in0(b[1]), .in1(n168), .out(n148) );
+    VAND U27 ( .in0(n157), .in1(n162), .out(sum[2]) );
+    VNAND U28 ( .in0(n164), .in1(n165), .out(n163) );
+    VAND U29 ( .in0(n160), .in1(n166), .out(sum[1]) );
+    VNAND U18 ( .in0(n139), .in1(n140), .out(c_out) );
+    VNAND U19 ( .in0(n142), .in1(n143), .out(n141) );
+endmodule
+

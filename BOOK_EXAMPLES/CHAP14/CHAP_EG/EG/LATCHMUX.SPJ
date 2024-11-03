@@ -1,0 +1,17 @@
+[Files]
+0=latchmux.v
+[Position]
+X=44
+Y=58
+Width=768
+Height=530
+[Settings]
+Mode=Debug
+Version=97.1
+[WindowPos]
+OpenWindows=
+Output=0,1,0,-1,0,-1,0,0,668,253
+[Options]
+DebugEnable=Yes
+CCEnable=No
+CcOpEnable=No
