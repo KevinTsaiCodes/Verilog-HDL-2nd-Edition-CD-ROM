@@ -1,0 +1,17 @@
+[Files]
+0=tri0.v
+
+[Position]
+Width=592
+Height=364
+X=44
+Y=44
+
+[Group0]
+Name=Default
+0=test_tri0:a
+1=test_tri0:control
+2=test_tri0:out
+
+[Settings]
+Mode=Debug

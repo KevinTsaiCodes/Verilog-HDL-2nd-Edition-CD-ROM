@@ -1,0 +1,12 @@
+[Files]
+0=mux.v
+
+[Group0]
+Name=Default
+0=stimulus:CNTL
+1=stimulus:IN0
+2=stimulus:IN1
+3=stimulus:OUTPUT
+
+[Settings]
+Mode=Debug

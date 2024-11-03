@@ -1,0 +1,17 @@
+[Files]
+0=fifo.v
+[Position]
+X=242
+Y=230
+Width=778
+Height=465
+[Settings]
+Mode=Debug
+Version=97.1
+[WindowPos]
+OpenWindows=
+Output=0,1,0,-1,0,-1,0,0,700,217
+[Options]
+DebugEnable=Yes
+CCEnable=No
+CcOpEnable=No

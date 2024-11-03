@@ -1,0 +1,10 @@
+[Settings]
+Mode=Debug
+
+[Files]
+0=wand_wor.v
+
+[Group0]
+Name=Default
+0="wand_wor:out1"
+1="wand_wor:out2"

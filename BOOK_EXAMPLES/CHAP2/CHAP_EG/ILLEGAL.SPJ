@@ -1,0 +1,17 @@
+[Files]
+0=illegal.v
+[Position]
+Width=954
+Height=481
+X=14
+Y=0
+[Settings]
+Version=97.1
+Mode=Debug
+[WindowPos]
+Output=0,1,0,-1,0,-1,0,0,876,233
+OpenWindows=
+[Options]
+DebugEnable=Yes
+CCEnable=No
+CcOpEnable=No

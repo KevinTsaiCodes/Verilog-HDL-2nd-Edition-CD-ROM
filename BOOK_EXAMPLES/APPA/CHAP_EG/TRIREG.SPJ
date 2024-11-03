@@ -1,0 +1,17 @@
+[Files]
+0=trireg.v
+
+[Position]
+Width=570
+Height=342
+X=66
+Y=66
+
+[Group0]
+Name=Default
+0=test_trireg:a
+1=test_trireg:control
+2=test_trireg:out
+
+[Settings]
+Mode=Debug

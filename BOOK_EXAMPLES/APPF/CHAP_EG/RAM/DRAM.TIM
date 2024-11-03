@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+//   FileName:  "timing" - for use with the dram.v file.
+//   Author  :  Venkata Ramana Kalapatapu
+//   Company :  Sand Microelectronics Inc.,
+//   Profile :  Sand develops Simulation Models, Synthesizable Cores and
+//              Performance Analysis Tools for Processors, Buses and Memory
+//              products.  Sand's products include models for industry standard  
+//              components and Custom developed models for specific  
+//              simulation environments.       
+//
+//              For more information on Sand, contact us at (408)-441-7138 by
+//              telephone, (408)-441-7538 by fax or email your specific needs
+//              to sales@sandmicro.com 
+////////////////////////////////////////////////////////////////////////////////
+
+parameter   tRC_min    =  120;
+parameter   tRP_min    =  50;
+parameter   tCPN_min   =  10;
+parameter   tRAS_min   =  60;
+parameter   tRAS_max   =  10000;
+parameter   tCAS_min   =  20;
+parameter   tCAS_max   =  10000;
+parameter   tRSH_min   =  20;
+parameter   tCSH_min   =  60;
+parameter   tRCD_min   =  20;
+parameter   tRCD_max   =  40;
+parameter   tRAD_min   =  15;
+parameter   tRAD_max   =  30;
+parameter   tCRP_min   =  10;
+parameter   tASR_min   =  0;
+parameter   tRAH_min   =  10;
+parameter   tASC_min   =  0;
+parameter   tCAH_min   =  15;
+parameter   tOES_min   =  0;
+parameter   tCLZ_min   =  0;
+parameter   tOLZ_min   =  0;
+parameter   tOED_min   =  15;
+parameter   tMRH_min   =  0;
+parameter   tREF_max   =  16;
+parameter   tRAC_max   =  60;
+parameter   tCAC_max   =  20;
+parameter   tAA_max    =  30;
+parameter   tOEA_max   =  20;
+parameter   tRAL_min   =  30;
+parameter   tOEZ_max   =  15;
+parameter   tWCH_min   =  15;
+parameter   tWP_min    =  15;
+parameter   tRWL_min   =  20;
+parameter   tCWL_min   =  15;
+parameter   tWCS_min   =  0;
+parameter   tOEH_min   =  0;
+parameter   tDS_min    =  0;
+parameter   tDH_min    =  15;
+parameter   tRWC_min   =  165;
+parameter   tRWD_min   =  80;
+parameter   tCWD_min   =  40;
+parameter   tAWD_min   =  50;
+parameter   tCSR_min   =  5 ;
+parameter   tCHR_min   =  15 ;
+parameter   tRPC_min   =  0 ;
+parameter   tRASS_min  =  100; 
+parameter   tRPS_min   =  120 ;
+parameter   tCHS_min   =  0 ;
+parameter   tRASP_min  =  60 ;
+parameter   tRASP_max  =  125000 ;
+parameter   tCP_min    =  10;
+parameter   tACP_max   =  35 ;
+parameter   tCPWD_min  =  55;
+parameter   tRHCP_min  =  35;
+parameter   tOFF_max   =  15;
+parameter   tPC_min    =  40;     
+
